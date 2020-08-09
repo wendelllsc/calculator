@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script src='./index.js'></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class='app'>
+        <div id='view' class="view">0</div>
+        <div class="grid-container-three">
+            <button onclick='limpar()' class="button-yellow">C</button>
+            <button onclick="pickOperation(this)" id='op-percent' class="operator">%</button>
+            <button onclick="pickOperation(this)" id='op-div' class="operator">÷</button>
+        </div>
+        <div class="grid-container">
+            <button onclick='pickNumber(this)' id='one' class="grid-number">1</button>
+            <button onclick='pickNumber(this)' id='two' class="grid-number">2</button>
+            <button onclick='pickNumber(this)' id='three' class="grid-number">3</button>
+            <button onclick="pickOperation(this)" id='op-mult' class="operator">x</button>
+            <button onclick='pickNumber(this)' id='four' class="grid-number">4</button>
+            <button onclick='pickNumber(this)' id='five' class="grid-number">5</button>
+            <button onclick='pickNumber(this)' id='six' class="grid-number">6</button>
+            <button onclick="pickOperation(this)" id='op-adc' class="operator">+</button>
+            <button onclick='pickNumber(this)' id='seven' class="grid-number">7</button>
+            <button onclick='pickNumber(this)' id='eight' class="grid-number">8</button>
+            <button onclick='pickNumber(this)' id='nine' class="grid-number">9</button>
+            <button onclick="pickOperation(this)" id='op-sub' class="operator">-</button>    
+        </div>
+        <div class="grid-container-three">
+            <button onclick="equals()" id='op-equals' class="button-yellow">=</button>
+            <button onclick='pickNumber(this)' id='zero' class="grid-number">0</button>
+            <button onclick='pickNumber(this)' id='dot' class="operator">.</button>
+        </div>
+    </div>
+</body>
+</html>

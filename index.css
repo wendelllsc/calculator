@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.app{
+    width: fit-content;
+    margin: auto;
+    background-color: #fff;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-bottom: 10px;
+}
+.grid-container-three {
+    display: grid;
+    grid-template-columns: 170px 80px 80px;
+    grid-column-gap: 10px;
+    margin-bottom: 10px;
+  }
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.view{
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 26px;
+    color: #373737;
+    padding: 10px;
+}
+.firstItems{
+    display: flex;
+    width: fit-content;
+}
+.button{
+    width: 80px;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+.button-yellow{
+    padding: 10px;
+    border: none;
+    border-radius: .5rem;
+    background-color: #F4D03F;
+    color: #fff;
+}
+.operator{
+    width: 80px;
+    padding: 10px;
+    border: none;
+    border-radius: .5rem;
+    background-color: #2E86C1;
+    color: #fff;
+}
+.grid-number{
+    width: 80px;
+    padding: 10px;
+    border: none;
+    border-radius: .5rem;
+    background-color: #eee;
+}
